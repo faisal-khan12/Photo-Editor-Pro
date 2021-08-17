@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dotaustere.photoeditorpro.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.dotaustere.photoeditorpro.ui.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+    <fragment
+        android:id="@+id/nav_ratePhoto"
+        android:name="com.dotaustere.photoeditorpro.ui.rate_photo.GalleryFragment"
+        android:label="Rate Photo Editor"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.dotaustere.photoeditorpro.ui.share_photo.SlideshowFragment"
+        android:label="Share Photo Editor"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_reportbug"
+        android:name="com.dotaustere.photoeditorpro.ui.reportBug.ReportFragment"
+        android:label="Report Bug"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/nav_restartApp"
+        android:name="com.dotaustere.photoeditorpro.ui.restart.RestartFragment"
+        android:label="Restart App"
+        tools:layout="@layout/fragment_restart" />
+    <fragment
+        android:id="@+id/nav_backup"
+        android:name="com.dotaustere.photoeditorpro.ui.backup.backupFragment"
+        android:label="Backup"
+        tools:layout="@layout/fragment_backup" />
+    <fragment
+        android:id="@+id/nav_about_editor"
+        android:name="com.dotaustere.photoeditorpro.ui.about.aboutFragment"
+        android:label="About Photo Editor"
+        tools:layout="@layout/fragment_about" />
+</navigation>

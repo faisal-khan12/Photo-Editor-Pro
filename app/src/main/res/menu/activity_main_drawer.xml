@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settingss" />
+
+
+        <item
+            android:id="@+id/nav_ratePhoto"
+            android:icon="@drawable/ic_rate"
+            android:title="@string/rate_photo_editor" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share_photo_editor" />
+        <item
+            android:id="@+id/nav_reportbug"
+            android:icon="@drawable/ic_report_bug"
+            android:title="@string/report_bug" />
+
+        <item
+            android:id="@+id/nav_restartApp"
+            android:icon="@drawable/ic_restart"
+            android:title="@string/restart_app" />
+
+        <item
+            android:id="@+id/nav_backup"
+            android:icon="@drawable/ic_backup"
+            android:title="Backup" />
+
+        <item
+            android:id="@+id/nav_about_editor"
+            android:icon="@drawable/ic_about"
+            android:title="@string/about_photo_editor" />
+
+
+    </group>
+</menu>
