@@ -1,12 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/gellery_img"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:clickable="true"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ggicon" />
+
+        <ImageView
+            android:id="@+id/camera_img"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ccccc" />
+
+
+        <ImageView
+            android:id="@+id/fileBrowser_img"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/fileb" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:textColor="@color/black"
+            android:layout_marginStart="40dp"
+            android:text="Gallery"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Camera"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Filebrowser"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/newimgfile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/newfile" />
+
+        <ImageView
+            android:id="@+id/batch_img"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/batchic" />
+
+
+        <ImageView
+            android:id="@+id/recentPhotos"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/recentphotoic" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:textColor="@color/black"
+            android:layout_marginStart="40dp"
+            android:text="New"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="35dp"
+
+            android:text="Batch"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Recent photos"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+
+
+        <ImageView
+            android:id="@+id/settings_img"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/settingsic" />
+
+        <ImageView
+            android:id="@+id/rate_img"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/rate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="40dp"
+
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/black"
+            android:text="Gallery"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:text="Camera"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,8 +226,10 @@
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
