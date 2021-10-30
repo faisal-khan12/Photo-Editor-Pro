@@ -35,16 +35,18 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     private ImageView gallery;
     private ImageView cameraImg;
+    private ImageView fileBrowser;
     int IMAGE_REQUEST_CODE = 45;
     int CAMERA_REQUEST_CODE = 14;
     int RESULT_CODE = 200;
+    private static int RESULT_LOAD_IMAGE = 1;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         gallery = root.findViewById(R.id.gellery_img);
+        fileBrowser = root.findViewById(R.id.fileBrowser_img);
+        cameraImg = root.findViewById(R.id.camera_img);
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,7 +58,7 @@ public class HomeFragment extends Fragment {
         });
 
 
-        cameraImg = root.findViewById(R.id.camera_img);
+
         cameraImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,13 +76,6 @@ public class HomeFragment extends Fragment {
             }
 
         });
-
-
-
-
-
-
-
 
         return root;
 
@@ -142,6 +137,11 @@ public class HomeFragment extends Fragment {
         return Uri.parse(path);
 
     }
+
+
+
+
+    
 
 
 

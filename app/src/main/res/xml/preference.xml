@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_sync"
+        android:title="Sync"
+        android:summary="sync your photos in your all devices"
+        android:defaultValue="true"
+        />
+    <ListPreference
+        android:key="pre_sync_type"
+        android:title="Sync connection type"
+        android:entries="@array/pre_conn_type"
+        android:entryValues="@array/pre_conn_entries"
+        android:defaultValue="WiFi"
+        android:summary="WiFi"
+
+        />
+
+    <CheckBoxPreference
+        android:key="pref_dark"
+        android:title="Night Mode"
+        android:summary="Enable Dark Mode"
+        android:defaultValue="true"
+        />
+
+</PreferenceScreen>

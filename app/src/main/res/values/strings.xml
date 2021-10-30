@@ -21,4 +21,21 @@
     <string name="home">Home</string>
     <string name="settingss">Settings</string>
     <string name="gallery">Gallery</string>
+    <string name="restartdg">Do you want to Restart Application?</string>
+
+    <string-array name="pre_conn_entries">
+        <item>WiFi</item>
+        <item>Mobile Data</item>
+        <item>WiFi/Mobile Data</item>
+    </string-array>
+
+    <string-array name="pre_conn_type">
+
+        <item>WiFi</item>
+        <item>Mobile</item>
+        <item>WiFi_Mobile</item>
+
+
+    </string-array>
+
 </resources>
